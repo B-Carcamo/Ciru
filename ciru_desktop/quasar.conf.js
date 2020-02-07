@@ -8,7 +8,8 @@ module.exports = function (ctx) {
     // https://quasar.dev/quasar-cli/cli-documentation/boot-files
     boot: [
       'axios',
-      'componentes-vue'
+      'componentes-vue',
+      'cirudb'
     ],
 
     // https://quasar.dev/quasar-cli/quasar-conf-js#Property%3A-css

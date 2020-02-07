@@ -1,5 +1,6 @@
 
-import { Notify, LocalStorage } from 'quasar'
+import { Notify } from 'quasar'
+import { db } from '../../boot/cirudb.js'
 import Axios from 'axios'
 
 /*
@@ -11,7 +12,8 @@ export async function Conectar ({ commit }, payload) {
   commit('spinnerC', { spnD: true, btnD: false, btnClos: false })
   await Axios.get(urlapi += 'conexion').then((response) => {
     mensanje('Conexión Exitosa', 'done', 'amber-8')
-   
+    db.open()
+    db.urlapi.add({ urlApi: payload })
     setTimeout(() => {
       commit('spinnerC2', { spnD: false, btnCD: true })
     }, 4000)

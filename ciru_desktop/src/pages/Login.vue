@@ -37,7 +37,7 @@
           <q-btn v-if="btnClos" flat color="red" label="Cancelar" @click="Dialogo(false)" />
           <q-btn v-if="btnD" flat label="Conectar" @click="Conectar(textapi)"/>
            <q-spinner-gears v-if="spnD" size="2.5em" color="green-9" />
-           <q-btn color="blue-grey-10" flat label="Cerrar" v-if="btnCD" @click="Dialogo(false)" />
+           <q-btn color="blue-grey-10" flat label="Cerrar" v-if="btnCD" @click="Dialogo2({opend: false, btnclos: true, btnd: true, btncd: false})" />
         </q-card-actions>
       </q-card>
     </q-dialog>
@@ -59,7 +59,7 @@ export default {
     ...mapState('Login', ['openD', 'btnD', 'spnD', 'btnCD', 'btnClos'])
   },
   methods: {
-    ...mapMutations('Login', ['Dialogo']),
+    ...mapMutations('Login', ['Dialogo', 'Dialogo2']),
     ...mapActions('Login', ['Conectar'])
   }
 }

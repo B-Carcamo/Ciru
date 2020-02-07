@@ -1,0 +1,7 @@
+{
+  "name": "ciru",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}

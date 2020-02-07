@@ -1,0 +1,146 @@
+  /* Settings font size
+  =========================================*/
+  $settings-font-size-header: 24px;
+  $settings-font-size-input-placeholder: 16px;
+  $settings-font-size-description: 14px;
+
+  /* Settings font weight
+  =========================================*/
+  $settings-font-weight-header: 300;
+  $settings-font-weight-input-placeholder: 400;
+  $settings-font-weight-description: 400;
+
+  /* Settings text color
+  =========================================*/
+  $settings-text-color-header: #CCCCCC;
+  $settings-text-input-placeholder: #CCCCCC;
+  $settings-text-color-description: #242424;
+
+
+ion-content {
+   font-family: 'Montserrat', sans-serif;
+    position: relative;
+}
+
+.img-size1{
+    width: 150px;
+    height: 150px;
+}
+
+.title-color{
+    color: #bdbdbd !important;
+}
+
+.margin-btn{
+    margin: 60px 16px 16px 16px !important;
+}
+
+.input-size{
+    font-size: 22px !important;
+}
+
+
+/* Settings title
+    ===============================*/
+    h1 {
+        color: $settings-text-color-header;
+        font-size: $settings-font-size-header;
+        font-weight: $settings-font-weight-header;
+        line-height: 29px;
+        margin-right: 20%;
+        margin-left: 20px;
+        margin-bottom: 40px;
+      }
+  
+      strong {
+        display: block;
+      }
+  
+
+      ion-grid {
+        min-height: 100%;
+  
+        [header]{
+          flex: 1;
+        }
+     }
+
+    form {
+        margin-top: 10%;
+  
+        /* Settings input-field
+        ===============================*/
+        [input-field] {
+          border-radius: 8px;
+          overflow: hidden;
+          border: 1px solid #CCCCCC;
+  
+          .item:nth-last-child(1){
+            .item-inner {
+              border-bottom: none !important;
+            }
+          }
+  
+          .item-block {
+            overflow: visible !important;
+          }
+        }
+  
+        ion-item {
+          background-color: transparent !important;
+  
+
+  
+          .item-inner {
+            display: block !important;
+            overflow: visible !important;
+            border-bottom: 1px solid #CCCCCC !important;
+            box-shadow: none !important;
+          }
+  
+          /* Settings text-input
+          ===============================*/
+  
+  
+          /* Settings input-placeholder
+          ===============================*/
+          ::-webkit-input-placeholder {
+            /* Chrome/Opera/Safari */
+            color: $settings-text-input-placeholder !important;
+            font-size: $settings-font-size-input-placeholder !important;
+            font-weight: $settings-font-weight-input-placeholder !important;
+          }
+  
+          ::-moz-placeholder {
+            /* Firefox 19+ */
+            color: $settings-text-input-placeholder !important;
+            font-size: $settings-font-size-input-placeholder !important;
+            font-weight: $settings-font-weight-input-placeholder !important;
+          }
+  
+  
+          :-moz-placeholder {
+            /* Firefox 18- */
+            color: $settings-text-input-placeholder !important;
+            font-size: $settings-font-size-input-placeholder !important;
+            font-weight: $settings-font-weight-input-placeholder !important;
+          }
+        }
+  
+        /*Settings description
+        ===============================*/
+        [description] {
+          margin: 20px 0;
+  
+          p {
+            color: $settings-text-color-description;
+            font-size: $settings-font-size-description;
+            font-weight: $settings-font-weight-description;
+            line-height: 14px;
+          }
+        }
+
+       
+    }
+
+

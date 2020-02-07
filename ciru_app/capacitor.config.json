@@ -1,0 +1,8 @@
+{
+  "appId": "com.carcamosoftware",
+  "appName": "Ciru",
+  "bundledWebRuntime": false,
+  "npmClient": "npm",
+  "webDir": "www",
+  "cordova": {}
+}

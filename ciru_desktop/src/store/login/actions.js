@@ -13,7 +13,14 @@ export async function Conectar ({ commit }, payload) {
   await Axios.get(urlapi += 'conexion').then((response) => {
     mensanje('Conexión Exitosa', 'done', 'amber-8')
     db.open()
-    db.urlapi.add({ urlApi: payload })
+    db.urlapi.toArray().then((arr) => {
+      if (arr.length === 0) {
+        db.urlapi.add({ urlApi: payload })
+      } else {
+        db.urlapi.update(1, { urlApi: payload })
+      }
+    })
+
     setTimeout(() => {
       commit('spinnerC2', { spnD: false, btnCD: true })
     }, 4000)

@@ -2,7 +2,7 @@
 
 Control de Inventario y Revisión Vehicular
 
-//Aplicación de Escritorio con Vue,Vuex,Quarsa y ElectronJs
+Aplicación de Escritorio con Vue,Vuex,Quarsa y ElectronJs
 
 ## Install the dependencies
 ```bash

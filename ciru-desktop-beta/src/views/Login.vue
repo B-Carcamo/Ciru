@@ -1,5 +1,10 @@
 <template>
-  <div class="home">
+  <div>
+    <el-switch
+  v-model="value2"
+  active-color="#13ce66"
+  inactive-color="#ff4949">
+</el-switch>
     <img alt="Vue logo" src="../assets/logo.png">
     <HelloWorld msg="Welcome to Your Vue.js App"/>
   </div>
@@ -7,12 +12,9 @@
 
 <script>
 // @ is an alias to /src
-import HelloWorld from '@/components/HelloWorld.vue'
+
 
 export default {
-  name: 'Home',
-  components: {
-    HelloWorld
-  }
+  name: 'Login'
 }
 </script>
